@@ -32,6 +32,10 @@ namespace Full_GRASP_And_SOLID.Library
             a la clase ConsolePrinter, la cual mediante un método estático (para que de esta manera no se creen instancias
             innecesarias) imprimirá por pantalla la información birndadá por cada clase. 
 
+            Tambien existía la posibilidad de designar todo el funcionamiento de la función PrintRecipe() a la clase 
+            ConsolePrinter, pero esto romperia con el patrón Expert, ya que la clase Recipe es experta en la información 
+            que se va a imprimir, y de igual manera, haría que la case ConsolePrinter pierda la posibilidad de funcionar con 
+            cualquier otra clase que funcione de otra forma.
         */
 
         public void PrintRecipe()
